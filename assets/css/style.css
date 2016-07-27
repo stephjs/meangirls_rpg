@@ -1,0 +1,45 @@
+body {
+	font-family: Arial;
+	background-color: pink;
+	margin-bottom: 50px;
+}
+#homeroom {
+	background-color: black;
+	padding: 20px;
+}
+
+img {
+	text-align: center;
+}
+
+#enemiesDiv {
+	font-size: 48px;
+	font-family: Arial;
+	padding: 2%;
+	padding-bottom: 20px;
+	height: 100%;
+	width: 100%;
+}
+h1 {
+	font-size: 30px;
+}
+
+#battleDiv img {
+	width: 100%;
+	height: 100%;
+}
+
+#attack_button {
+	padding: 20px;
+	margin-top: 140px;
+	color: yellow;
+}
+#alertBox {
+	margin-top: 40px;
+}
+
+#frenemyBox {
+	float: right;
+	padding: 20px;
+	margin-top: 20px;
+}

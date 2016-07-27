@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mean Girls RPG</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <center>   
+        <div class = "jumbotron">
+        <div class = "container">    
+            <h1>Mean Girls RPG</h1>
+            <div id = "todo"></div>
+        </div>
+        </div>
+        
+        <!-- homeroom (3/3/3/3) is the container where the game starts-->
+        <div class = "container" id = "homeroom">
+            <div class = "row">
+                <img class ="col-xs-3" id="cady" src = "assets/images/cady.jpg"/>
+                <img class ="col-xs-3" id="regina" src = "assets/images/regina.jpg"/>
+                <img class ="col-xs-3" id="gretchen" src = "assets/images/gretchen.jpg"/>
+                <img class ="col-xs-3" id="karen" src = "assets/images/karen.png"/>
+            </div>
+        </div>
+        
+        <!--burnbook (5/7) and (5/5/2) is the container area for the fighting part of the game-->
+        <div class = "container" id = "burnbook">
+            <div class = "row">
+                <div class="col-xs-5">
+                    <div class = "row">
+                        <h1>You</h1>
+                    </div>
+                    <div class = "row">
+                        <header class="col-xs-12" id = "playerName"></header>
+                    </div>
+
+                    <div class = "row">
+                        <div class="col-xs-12" id = "playerDiv"></div>
+                    </div>
+                    
+                    <div class = "row">
+                        <footer class="col-xs-12" id = "playerHp"></footer>
+                    </div>
+                </div>
+                
+                <!--this is where the Attack button goes-->
+                <div class="col-xs-2">
+                    <div class = "row">
+                        <button class = "btn-danger" id = "attack_button">Burn</button>
+                    </div>
+                    <div class = "row">
+                        <div id="alertBox"></div>
+                    </div>
+                </div>
+
+                <!--this will tell who attacked who for how much damage-->
+                
+                    
+                
+
+                <!-- battleStation holds the current enemy you are fighting-->
+                <div class="col-xs-5" id="battleStation">
+                    <div class = "row">
+                        <h1>Plastic</h1>
+                    </div>
+                    <div class = "row">
+                        <header class="col-xs-12" id = "battleName"></header>
+                    </div>
+
+                    <div class = "row">
+                        <div class="col-xs-12" id = "battleDiv"></div>
+                    </div>
+                    
+                    <div class = "row">
+                        <footer class="col-xs-12" id = "battleHp"></footer>
+                    </div>
+                </div>
+
+                
+
+
+
+                <!--this holds the enemies while they wait to fight-->
+                <div class="col-xs-7" id="frenemyBox">
+                    
+                    <div class = "row">
+                        <div class="col-xs-12" id = "enemyholder">
+                        
+                            <div id = "frenemies"></div>
+                            <div id = "enemiesDiv"></div>
+                        </div>
+                    </div>
+
+
+                    <!--taunts go below the enemies-->
+                    <div class = "row">
+                        <div class="col-xs-12" id = "tauntbox"></div>
+                    </div>
+
+
+                    <!-- click the burn book button when you are sure about your character selection (main character) -->
+                    <div class = "row">
+                        <div class="col-xs-12">
+                            <button class = "btn-danger" id = "buttonBurn">Burn Book</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+    
+        <script src="assets/javascript/game.js"></script>
+    </center> 
+    </body>
+</html>
